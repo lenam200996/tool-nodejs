@@ -7,6 +7,12 @@ var bodyParser = require('body-parser')
 app.use(bodyParser.json())
 var keyController = require('./controllers/secretKey')
 var rateController = require('./controllers/rate')
+app.get('/', async (req, res) => {
+    res.send('hello world!!')
+})
+app.get('/test', async (req,res) => {
+    res.send('ok')
+})
 app.post('/create-key',keyController.create)
 app.post('/update-key',keyController.update)
 app.post('/verify-key',keyController.verify)
