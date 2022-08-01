@@ -66,7 +66,8 @@ class secretKeyController {
         if(new Date(doc.expiredTime).getTime() <= Date.now()) return res.status(200).send({error: 'SECRET_KEY_EXPIRED'})
         return res.status(200).send({
             key, 
-            expiredTime : doc.expiredTime
+            expiredTime : doc.expiredTime,
+            type: doc.type
         })
     }
 }
