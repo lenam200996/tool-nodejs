@@ -1,3 +1,7 @@
-User-agent: * 
-Disallow:
-Sitemap: https://fbulks.site
+User-agent: *
+Allow: /
+
+Sitemap: https://www.fbulks.site/sitemap.xml
+Sitemap: https://fbulks.site/sitemap.xml
+Sitemap: http://www.fbulks.site/sitemap.xml
+Sitemap: http://fbulks.site/sitemap.xml
