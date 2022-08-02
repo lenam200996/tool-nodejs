@@ -59,6 +59,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open Sans:bold,regular|Roboto Slab:bold,regular|Roboto:bold,regular|Arima Madurai:bold,regular&display=swap" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
     <style id="style_page" type="text/css">
         @media (min-width: 768px) {
             .ladi-section .ladi-container {
@@ -277,7 +281,7 @@
                 </div>
             </div>
         </div>
-        <div id="SECTION77" class='ladi-section'>
+        <div id="SECTION77" class='ladi-section' style="height: 800px ;">
             <div class='ladi-section-background'></div>
             <div class="ladi-container">
                 <div id="PARAGRAPH88" class='ladi-element'>
@@ -286,24 +290,18 @@
                 <div id="HEADLINE89" class='ladi-element'>
                     <h1 class='ladi-headline'>Screenshots</h1>
                 </div>
-                <div id="IMAGE78" class='ladi-element'>
-                    <div class='ladi-image'>
-                        <div class="ladi-image-background"></div>
+                <div class="owl-carousel owl-theme" style="position: absolute;top: 200px" >
+                    <div class="item">
+                        <img src="./assets/b1.png" width="100%" alt="">
                     </div>
-                </div>
-                <div id="IMAGE93" class='ladi-element'>
-                    <div class='ladi-image'>
-                        <div class="ladi-image-background"></div>
+                    <div class="item">
+                        <img src="./assets/b2.png" width="100%" alt="">
                     </div>
-                </div>
-                <div id="IMAGE99" class='ladi-element'>
-                    <div class='ladi-image'>
-                        <div class="ladi-image-background"></div>
+                    <div class="item">
+                        <img src="./assets/b3.png" width="100%" alt="">
                     </div>
-                </div>
-                <div id="IMAGE96" class='ladi-element'>
-                    <div class='ladi-image'>
-                        <div class="ladi-image-background"></div>
+                    <div class="item">
+                        <img src="./assets/b4.png" width="100%" alt="">
                     </div>
                 </div>
             </div>
@@ -650,6 +648,26 @@
     <div id="backdrop-dropbox" class="backdrop-dropbox"></div>
     <div id="lightbox-screen" class="lightbox-screen"></div>
     <script id="script_lazyload" type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            margin:10,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        });
+        var dots = $('.owl-dots').css('position', 'absolute').css('bottom', '5px');
+dots.css('left', 'calc(50% - ' + dots.width()/2+'px)');
         (function() {
             var style_lazyload = document.getElementById('style_lazyload');
             var docEventScroll = window;
