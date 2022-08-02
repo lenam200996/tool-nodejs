@@ -2404,7 +2404,8 @@ a:link {
         width: 204px;
         height: 57px;
         top: 576px;
-        left: -237px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #BUTTON222>.ladi-button>.ladi-button-background {
         background-color: rgb(61, 155, 233);
@@ -2442,7 +2443,7 @@ a:link {
         width: 83px;
         height: 27px;
         top: 38px;
-        left: 656px;
+        left: 635px;
     }
     #BUTTON225>.ladi-button {
         border-radius: 5px;
@@ -2451,7 +2452,7 @@ a:link {
         width: 130px;
         height: 56px;
         top: 13px;
-        left: 0px;
+        left: 24px;
     }
     #IMAGE226>.ladi-image>.ladi-image-background {
         width: 130px;
@@ -2502,7 +2503,7 @@ a:link {
         width: 269px;
         height: 568px;
         top: 211px;
-        left: -1px;
+        left: 62px;
     }
     #GROUP53 {
         width: 268px;
@@ -2628,7 +2629,7 @@ a:link {
         width: 269px;
         height: 432px;
         top: 211px;
-        left: 692px;
+        left: 643px;
     }
     #GROUP63 {
         width: 268px;
@@ -2663,7 +2664,7 @@ a:link {
     #GROUP66 {
         width: 268px;
         height: 111px;
-        top: 180px;
+        top: 130px;
         left: 0px;
     }
     #HEADLINE67 {
@@ -2693,7 +2694,13 @@ a:link {
     #GROUP72 {
         width: 268px;
         height: 97px;
-        top: 335px;
+        top: 270px;
+        left: 0px;
+    }
+    #GROUP72-1 {
+        width: 268px;
+        height: 97px;
+        top: 395px;
         left: 0px;
     }
     #HEADLINE73 {
@@ -2721,9 +2728,9 @@ a:link {
         line-height: 1.4;
     }
     #PARAGRAPH88 {
-        width: 536px;
+        width: 100%;
         top: 116px;
-        left: 226px;
+        left: 0;
     }
     #PARAGRAPH88>.ladi-paragraph {
         font-family: "Open Sans", sans-serif;
@@ -2856,7 +2863,7 @@ a:link {
     }
     #LINE109>.ladi-line {
         height: 100%;
-        padding: 0px 8px;
+        padding: 0px 14px;
     }
     #GROUP110 {
         width: 306px;
@@ -2917,13 +2924,13 @@ a:link {
     }
     #LINE114>.ladi-line {
         height: 100%;
-        padding: 0px 8px;
+        padding: 0px 14px;
     }
     #GROUP115 {
         width: 306px;
         height: 175px;
         top: 173px;
-        left: -8px;
+        left: 25px;
     }
     #HEADLINE116 {
         width: 258px;
@@ -2978,7 +2985,7 @@ a:link {
     }
     #LINE119>.ladi-line {
         height: 100%;
-        padding: 0px 8px;
+        padding: 0px 14px;
     }
     #HEADLINE120 {
         width: 571px;
@@ -3287,7 +3294,7 @@ a:link {
         width: 205px;
         height: 27px;
         top: 38px;
-        left: 755px;
+        left: 730px;
     }
     #BUTTON259>.ladi-button {
         border-radius: 5px;
@@ -3830,6 +3837,9 @@ a:link {
 }
 
 @media (max-width: 767px) {
+    .main-title{
+        font-size: 64px !important;
+    }
     #SECTION_POPUP {
         height: 0px;
     }
@@ -3854,7 +3864,7 @@ a:link {
         background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
     }
     #SECTION14 {
-        height: 1637px;
+        height: 1848px;
     }
     #SECTION14>.ladi-section-background {
         background-color: rgb(255, 255, 255);
@@ -4061,7 +4071,7 @@ a:link {
     #GROUP53 {
         width: 268px;
         height: 97px;
-        top: 0px;
+        top: 15px;
         left: 1.5px;
     }
     #HEADLINE21 {
@@ -4078,7 +4088,7 @@ a:link {
     }
     #PARAGRAPH22 {
         width: 268px;
-        top: 38px;
+        top: 35px;
         left: 0px;
     }
     #PARAGRAPH22>.ladi-paragraph {
@@ -4091,13 +4101,13 @@ a:link {
     #GROUP54 {
         width: 268px;
         height: 215px;
-        top: 97px;
+        top: 110px;
         left: 0px;
     }
     #HEADLINE55 {
-        width: 225px;
+        width: 100%;
         top: 0px;
-        left: 43px;
+        /* left: 43px; */
     }
     #HEADLINE55>.ladi-headline {
         font-family: "Roboto", sans-serif;
@@ -4108,26 +4118,26 @@ a:link {
     }
     #PARAGRAPH56 {
         width: 268px;
-        top: 97px;
+        top: 65px;
         left: 0px;
     }
     #PARAGRAPH56>.ladi-paragraph {
         font-family: "Roboto", sans-serif;
         color: rgb(158, 158, 158);
         font-size: 14px;
-        text-align: center;
+        text-align: right;
         line-height: 1.4;
     }
     #GROUP57 {
         width: 269.5px;
         height: 125px;
-        top: 416px;
+        top: 410px;
         left: 0px;
     }
     #HEADLINE58 {
-        width: 225px;
+        width: 100%;
         top: 0px;
-        left: 44.5px;
+        /* left: 44.5px; */
     }
     #HEADLINE58>.ladi-headline {
         font-family: "Roboto", sans-serif;
@@ -4138,7 +4148,7 @@ a:link {
     }
     #PARAGRAPH59 {
         width: 268px;
-        top: 66px;
+        top: 40px;
         left: 0px;
     }
     #PARAGRAPH59>.ladi-paragraph {
@@ -4151,7 +4161,7 @@ a:link {
     #GROUP60 {
         width: 268px;
         height: 97px;
-        top: 319px;
+        top: 315px;
         left: 0px;
     }
     #HEADLINE61 {
@@ -4248,6 +4258,12 @@ a:link {
         width: 268px;
         height: 97px;
         top: 256px;
+        left: 1.25px;
+    }
+    #GROUP72-1 {
+        width: 268px;
+        height: 97px;
+        top: 380px;
         left: 1.25px;
     }
     #HEADLINE73 {
@@ -5381,4 +5397,15 @@ a:link {
         top: 226.5px;
         left: 67.5px;
     }
+}
+
+.main-title{
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 260px;
+    font-family: "Roboto", sans-serif;
 }
