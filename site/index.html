@@ -5,48 +5,11 @@
     <meta charset="UTF-8">
     <title>FBulks Spam Tool - Gửi tin nhắn hàng loạt cho Fanpage</title>
     <meta http-equiv="Cache-Control" content="no-cache">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';">
     <meta http-equiv="Expires" content="-1">
     <meta name="keywords" content="fanpage, facebook tool, spam tin nhắn, spam , spam fanpage, fbulks, bulks, gửi tin tự động">
     <meta name="description" content="Spam tin nhắn cho khách hàng cũ. Bộ công cụ giúp bạn gửi tin tự động đến khách hàng đã từng nhắn tin cho fanpage, giảm chi phí re-marketing, không checkpoint">
-    <script type='text/javascript'>
-        window.ladi_viewport = function() {
-            var screen_width = window.ladi_screen_width || window.screen.width;
-            var width = window.outerWidth > 0 ? window.outerWidth : screen_width;
-            var widthDevice = width;
-            var is_desktop = width >= 768;
-            var content = "";
-            if (typeof window.ladi_is_desktop == "undefined" || window.ladi_is_desktop == undefined) {
-                window.ladi_is_desktop = is_desktop;
-            }
-            if (!is_desktop) {
-                widthDevice = 420;
-            } else {
-                widthDevice = 960;
-            }
-            content = "width=" + widthDevice + ", user-scalable=no";
-            var scale = 1;
-            if (!is_desktop && widthDevice != screen_width && screen_width > 0) {
-                scale = screen_width / widthDevice;
-            }
-            if (scale != 1) {
-                content += ", initial-scale=" + scale + ", minimum-scale=" + scale + ", maximum-scale=" + scale;
-            }
-            var docViewport = document.getElementById("viewport");
-            if (!docViewport) {
-                docViewport = document.createElement("meta");
-                docViewport.setAttribute("id", "viewport");
-                docViewport.setAttribute("name", "viewport");
-                document.head.appendChild(docViewport);
-            }
-            docViewport.setAttribute("content", content);
-        };
-        window.ladi_viewport();
-        window.ladi_fbq_data = [];
-        window.ladi_fbq = function(track_name, conversion_name, data, event_data) {
-            window.ladi_fbq_data.push([track_name, conversion_name, data, event_data]);
-        };
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://fbulks.site" />
     <meta property="og:url" content="https://fbulks.site" />
     <meta property="og:title" content="FBulks - Công cụ gửi tin nhắn hàng loạt đến khách hàng cũ" />
@@ -71,7 +34,7 @@
 
         @media (max-width: 767px) {
             .ladi-section .ladi-container {
-                width: 420px;
+                width: 100%;
             }
         }
 
@@ -139,7 +102,11 @@
             <div class='ladi-section-background'></div>
             <div class="ladi-overlay"></div>
             <div class="ladi-container">
-                <h1 class="main-title">Công cụ gửi tin nhắn hàng loạt tới khách hàng cũ</h1>
+                <div class="main-text">
+                    <h1 class="main-title">Công cụ gửi tin nhắn hàng loạt tới khách hàng cũ</h1>
+                    <h2 class="main-des">Gửi tin nhắn spam không sợ checkpoint, đa dạng nội dung</h2>
+                </div>
+                
                 <!-- <div id="HEADLINE218" class='ladi-element'>
                     <h1 class='ladi-headline'>Công cụ gửi tin nhắn</h1>
                 </div>
@@ -200,7 +167,7 @@
                 <div id="IMAGE76" class='ladi-element'>
                     <div class='ladi-image'>
                         <div class="ladi-image-background">
-                            <img src="./assets/iphone.png" title="Spam tin nhan, spam facebook, gui tin nhan hang loat, autoinbox" alt="Spam tin nhan, spam facebook, gui tin nhan hang loat, autoinbox" width="100%" height="100%" alt="">
+                            <img src="./assets/iphone.png" loading="lazy" title="Spam tin nhan, spam facebook, gui tin nhan hang loat, autoinbox" alt="Spam tin nhan, spam facebook, gui tin nhan hang loat, autoinbox" width="100%" height="100%" alt="">
                         </div>
                     </div>
                 </div>
@@ -307,16 +274,16 @@
                 left: 50%;
                 transform: translateX(-50%);" >
                     <div class="item">
-                        <img src="./assets/b1.png" alt="Gửi tin nhắn hàng loạt tới fanpage" title="fbulks - Gửi tin nhắn hàng loạt" width="100%" alt="">
+                        <img src="./assets/b1.png" loading="lazy" alt="Gửi tin nhắn hàng loạt tới fanpage" title="fbulks - Gửi tin nhắn hàng loạt" width="100%" height="auto" >
                     </div>
                     <div class="item">
-                        <img src="./assets/b2.png" alt="fbulks - bộ công cụ spam tin nhắn" title="fbulks - spam tin nhắn fanpage" width="100%" alt="">
+                        <img src="./assets/b2.png" loading="lazy" alt="fbulks - bộ công cụ spam tin nhắn" title="fbulks - spam tin nhắn fanpage" width="100%" height="auto"  >
                     </div>
                     <div class="item">
-                        <img src="./assets/b3.png" alt="Gửi tin nhắn đến khách hàng cũ đã từng nhắn tin cho page" title="fbulks - autoinbox khách hãng cũ fanpage" width="100%" alt="">
+                        <img src="./assets/b3.png" loading="lazy" alt="Gửi tin nhắn đến khách hàng cũ đã từng nhắn tin cho page" title="fbulks - autoinbox khách hãng cũ fanpage" width="100%" height="auto"  >
                     </div>
                     <div class="item">
-                        <img src="./assets/b4.png" alt="Spam tin nhắn fanpage" title="fbulks - re-marketing tới khách hàng đã từng nhắn tin cho page" width="100%" alt="">
+                        <img src="./assets/b4.png" loading="lazy" alt="Spam tin nhắn fanpage" title="fbulks - re-marketing tới khách hàng đã từng nhắn tin cho page" width="100%" height="auto"  >
                     </div>
                 </div>
             </div>
@@ -608,32 +575,45 @@
                             <h4 class='ladi-headline'>FBulks - Công cụ gửi tin nhắn hàng loạt cho Fanpage</h4>
                         </div>
                         <div id="GROUP301" class='ladi-element'>
-                            <div class='ladi-group'>
-                                <div id="SHAPE302" class='ladi-element'>
-                                    <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 24 24" fill="rgba(5, 31, 77, 1.0)"> <path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"></path> </svg></div>
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                                <div style="width: 19px; height:23px;margin-right: 8px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 24 24" fill="rgba(5, 31, 77, 1.0)"> <path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"></path> </svg>
                                 </div>
-                                <div id="HEADLINE303" class='ladi-element'>
-                                    <p class='ladi-headline'>Website: https://fbulks.site</p>
+                                <div>
+                                    <p style="font-size: 14px;">Website: https://fbulks.site<br></p>
                                 </div>
                             </div>
+                          
                         </div>
                         <div id="GROUP307" class='ladi-element'>
-                            <div class='ladi-group'>
-                                <div id="SHAPE308" class='ladi-element'>
-                                    <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 24 24" fill="rgba(5, 31, 77, 1.0)"> <path d="M20,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6A2,2 0 0,0 20,4M20,18H4V8L12,13L20,8V18M20,6L12,11L4,6V6H20V6Z"></path> </svg></div>
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                                <div style="width: 19px; height:23px;margin-right: 8px;">
+                                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 24 24" fill="rgba(5, 31, 77, 1.0)"> <path d="M20,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6A2,2 0 0,0 20,4M20,18H4V8L12,13L20,8V18M20,6L12,11L4,6V6H20V6Z"></path> </svg>
                                 </div>
-                                <div id="HEADLINE309" class='ladi-element'>
-                                    <p class='ladi-headline'>Email: fbulktool@gmail.com</p>
+                                <div>
+                                    <p style="font-size: 14px;">Email: fbulktool@gmail.com<br></p>
                                 </div>
                             </div>
+                            
                         </div>
                         <a href="https://www.facebook.com/fbulks" target="_blank" id="GROUP310" class='ladi-element'>
-                            <div class='ladi-group'>
-                                <div id="SHAPE311" class='ladi-element'>
-                                    <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1536 1896.0833" class="" fill="rgba(5, 31, 77, 1.0)"> <path d="M1248 128q119 0 203.5 84.5T1536 416v960q0 119-84.5 203.5T1248 1664h-188v-595h199l30-232h-229V689q0-56 23.5-84t91.5-28l122-1V369q-63-9-178-9-136 0-217.5 80T820 666v171H620v232h200v595H288q-119 0-203.5-84.5T0 1376V416q0-119 84.5-203.5T288 128h960z"></path> </svg></div>
+                            <div style="display: flex; align-items: center;">
+                                <div style="width: 19px; height:23px;margin-right: 8px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1536 1896.0833" class="" fill="rgba(5, 31, 77, 1.0)"> <path d="M1248 128q119 0 203.5 84.5T1536 416v960q0 119-84.5 203.5T1248 1664h-188v-595h199l30-232h-229V689q0-56 23.5-84t91.5-28l122-1V369q-63-9-178-9-136 0-217.5 80T820 666v171H620v232h200v595H288q-119 0-203.5-84.5T0 1376V416q0-119 84.5-203.5T288 128h960z"></path> </svg>
                                 </div>
-                                <div id="HEADLINE312" class='ladi-element'>
-                                    <p class='ladi-headline'>FBulks<br></p>
+                                <div>
+                                    <p style="font-size: 14px;">FBulks<br></p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCQI2eZ565ZkNLt3vxinT-UA" target="_blank" id="GROUP310-1" class='ladi-element' style="top: 180px">
+                            <div style="display: flex; align-items: center;">
+                                <div style="width: 24px; height:25px;margin-right: 8px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.0833" class="" fill="rgba(5, 31, 77, 1.0)"> <path d="M1280 896q0-37-30-54L738 522q-31-20-65-2-33 18-33 56v640q0 38 33 56 16 8 31 8 20 0 34-10l512-320q30-17 30-54zm512 0q0 96-1 150t-8.5 136.5T1760 1330q-16 73-69 123t-124 58q-222 25-671 25t-671-25q-71-8-124.5-58T31 1330q-14-65-21.5-147.5T1 1046 0 896t1-150 8.5-136.5T32 462q16-73 69-123t124-58q222-25 671-25t671 25q71 8 124.5 58t69.5 123q14 65 21.5 147.5T1791 746t1 150z"></path> </svg>
+                                    
+                                </div>
+                                <div>
+                                    <p style="font-size: 14px;">FBulks - Hỗ trợ gửi tin hàng loạt cho Fanpage<br></p>
                                 </div>
                             </div>
                         </a>
@@ -642,16 +622,9 @@
                 <div id="HEADLINE330" class='ladi-element'>
                     <h1 class='ladi-headline'>©2022 Allrights reserved fbulks.site</h1>
                 </div>
-                <a href="https://www.youtube.com/channel/UCQI2eZ565ZkNLt3vxinT-UA" target="_blank" id="GROUP342" class='ladi-element'>
-                    <div class='ladi-group'>
-                        <div id="SHAPE343" class='ladi-element'>
-                            <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.0833" class="" fill="rgba(5, 31, 77, 1.0)"> <path d="M1280 896q0-37-30-54L738 522q-31-20-65-2-33 18-33 56v640q0 38 33 56 16 8 31 8 20 0 34-10l512-320q30-17 30-54zm512 0q0 96-1 150t-8.5 136.5T1760 1330q-16 73-69 123t-124 58q-222 25-671 25t-671-25q-71-8-124.5-58T31 1330q-14-65-21.5-147.5T1 1046 0 896t1-150 8.5-136.5T32 462q16-73 69-123t124-58q222-25 671-25t671 25q71 8 124.5 58t69.5 123q14 65 21.5 147.5T1791 746t1 150z"></path> </svg></div>
-                        </div>
-                        <div id="HEADLINE344" class='ladi-element'>
-                            <p class='ladi-headline'>FBulks - Hỗ trợ gửi tin hàng loạt cho Fanpage</p>
-                        </div>
-                    </div>
-                </a>
+                
+
+                
             </div>
         </div>
         <div id="SECTION_POPUP" class='ladi-section'>
@@ -663,26 +636,9 @@
     <div id="backdrop-dropbox" class="backdrop-dropbox"></div>
     <div id="lightbox-screen" class="lightbox-screen"></div>
     <script id="script_lazyload" type="text/javascript">
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            margin:10,
-            nav:false,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:1
-                }
-            }
-        });
-        var dots = $('.owl-dots').css('position', 'absolute').css('bottom', '5px');
-dots.css('left', 'calc(50% - ' + dots.width()/2+'px)');
+        
+        
+        
         (function() {
             var style_lazyload = document.getElementById('style_lazyload');
             var docEventScroll = window;
@@ -828,6 +784,31 @@ dots.css('left', 'calc(50% - ' + dots.width()/2+'px)');
     </script>
     <script src="jquery.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+       $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+            loop:true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            margin:10,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        });
+        var dots = $('.owl-dots').css('position', 'absolute').css('bottom', '5px');
+dots.css('left', 'calc(50% - ' + dots.width()/2+'px)');
+       });
+           
+    </script>
      <!-- Messenger Chat plugin Code -->
      <div id="fb-root"></div>
 

@@ -3708,9 +3708,10 @@ a:link {
         left: 254.5px;
     }
     #HEADLINE300 {
-        width: 488px;
+        width: 100%;
         top: 0px;
-        left: 0px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #HEADLINE300>.ladi-headline {
         color: rgb(5, 31, 77);
@@ -3720,10 +3721,11 @@ a:link {
         line-height: 1.4;
     }
     #GROUP301 {
-        width: 327px;
+        width: 100%;
         height: 22.5469px;
         top: 111.953px;
-        left: 142.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #SHAPE302 {
         width: 28.7993px;
@@ -3746,10 +3748,11 @@ a:link {
         line-height: 1.4;
     }
     #GROUP307 {
-        width: 290px;
+        width: 100%;
         height: 22.5469px;
         top: 75.62px;
-        left: 142.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #SHAPE308 {
         width: 20.1188px;
@@ -3772,10 +3775,21 @@ a:link {
         line-height: 1.4;
     }
     #GROUP310 {
-        width: 87px;
         height: 24px;
         top: 43.5px;
-        left: 200.5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #GROUP310-1{
+        display: block;
+        width: 100%;
+        height: 24px;
+        top: 147px !important;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #GROUP310-1>div{
+        justify-content: center;
     }
     #SHAPE311 {
         width: 22.5469px;
@@ -3840,6 +3854,9 @@ a:link {
     .main-title{
         font-size: 64px !important;
     }
+    .main-des{
+        font-size: 48px !important;
+    }
     #SECTION_POPUP {
         height: 0px;
     }
@@ -3847,7 +3864,7 @@ a:link {
         background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
     }
     #SECTION217 {
-        height: 789px;
+        height: 1100px;
     }
     #SECTION217>.ladi-overlay {
         background-color: rgba(52, 55, 74, 0.61);
@@ -3893,7 +3910,7 @@ a:link {
         background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
     }
     #SECTION122 {
-        height: 1258px;
+        height: 1340px;
     }
     #SECTION122>.ladi-section-background {
         background-image: url("https://w.ladicdn.com/s768x1258/57b167c9ca57d39c18a1c57c/footer_bg.jpg");
@@ -3967,8 +3984,9 @@ a:link {
     #BUTTON222 {
         width: 204px;
         height: 40px;
-        top: 709px;
-        left: 108px;
+        top: 1000px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #BUTTON222>.ladi-button>.ladi-button-background {
         background-color: rgb(61, 155, 233);
@@ -4027,7 +4045,8 @@ a:link {
     #HEADLINE15 {
         width: 355px;
         top: 20px;
-        left: 32.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #HEADLINE15>.ladi-headline {
         font-family: "Roboto", sans-serif;
@@ -4040,7 +4059,8 @@ a:link {
     #PARAGRAPH52 {
         width: 355px;
         top: 72px;
-        left: 32.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #PARAGRAPH52>.ladi-paragraph {
         font-family: "Open Sans", sans-serif;
@@ -4053,7 +4073,8 @@ a:link {
         width: 248.719px;
         height: 510px;
         top: 126px;
-        left: 85.6406px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #IMAGE76>.ladi-image>.ladi-image-background {
         width: 249.796px;
@@ -4066,7 +4087,8 @@ a:link {
         width: 269.5px;
         height: 541px;
         top: 646px;
-        left: 76px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #GROUP53 {
         width: 268px;
@@ -4192,7 +4214,8 @@ a:link {
         width: 269.25px;
         height: 353px;
         top: 1232px;
-        left: 76px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #GROUP63 {
         width: 268px;
@@ -4293,7 +4316,8 @@ a:link {
     #PARAGRAPH88 {
         width: 355px;
         top: 72px;
-        left: 32.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #PARAGRAPH88>.ladi-paragraph {
         font-family: "Open Sans", sans-serif;
@@ -4305,7 +4329,8 @@ a:link {
     #HEADLINE89 {
         width: 355px;
         top: 20px;
-        left: 32.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #HEADLINE89>.ladi-headline {
         font-family: "Roboto", sans-serif;
@@ -4371,7 +4396,8 @@ a:link {
         width: 306px;
         height: 175px;
         top: 311px;
-        left: 60.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #HEADLINE106 {
         width: 258px;
@@ -4432,7 +4458,8 @@ a:link {
         width: 306px;
         height: 175px;
         top: 516px;
-        left: 60.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #HEADLINE111 {
         width: 258px;
@@ -4493,7 +4520,8 @@ a:link {
         width: 306px;
         height: 175px;
         top: 126px;
-        left: 60.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #HEADLINE116 {
         width: 258px;
@@ -4553,7 +4581,8 @@ a:link {
     #HEADLINE120 {
         width: 355px;
         top: 20px;
-        left: 32.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #HEADLINE120>.ladi-headline {
         font-family: "Roboto", sans-serif;
@@ -4566,7 +4595,8 @@ a:link {
     #PARAGRAPH121 {
         width: 355px;
         top: 72px;
-        left: 32.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #PARAGRAPH121>.ladi-paragraph {
         font-family: "Open Sans", sans-serif;
@@ -4579,7 +4609,8 @@ a:link {
         width: 291px;
         height: 247px;
         top: 146px;
-        left: 64.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #BOX126 {
         width: 144px;
@@ -4639,7 +4670,8 @@ a:link {
         width: 291px;
         height: 247px;
         top: 434px;
-        left: 64.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #BOX131 {
         width: 144px;
@@ -4699,7 +4731,8 @@ a:link {
         width: 291px;
         height: 247px;
         top: 712px;
-        left: 64.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #BOX136 {
         width: 144px;
@@ -4759,7 +4792,8 @@ a:link {
         width: 291px;
         height: 247px;
         top: 990px;
-        left: 64.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #BOX141 {
         width: 144px;
@@ -4818,7 +4852,8 @@ a:link {
     #PARAGRAPH145 {
         width: 355px;
         top: 72px;
-        left: 32.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #PARAGRAPH145>.ladi-paragraph {
         font-family: "Open Sans", sans-serif;
@@ -4830,7 +4865,8 @@ a:link {
     #HEADLINE146 {
         width: 355px;
         top: 20px;
-        left: 32.5px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #HEADLINE146>.ladi-headline {
         font-family: "Roboto", sans-serif;
@@ -4869,13 +4905,14 @@ a:link {
         background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
     }
     #GROUP262 {
-        width: 615.657px;
+        width: 100%;
         height: 1508.01px;
         top: 79px;
-        left: 90.135px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #GROUP263 {
-        width: 239.327px;
+        width: 100%;
         height: 303.998px;
         top: 871.006px;
         left: 0px;
@@ -4883,7 +4920,8 @@ a:link {
     #PARAGRAPH264 {
         width: 176px;
         top: 31.624px;
-        left: 35.4791px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #PARAGRAPH264>.ladi-paragraph {
         color: rgb(5, 31, 77);
@@ -4893,9 +4931,10 @@ a:link {
         line-height: 1.6;
     }
     #PARAGRAPH265 {
-        width: 239px;
+        /* width: 239px; */
         top: 121.905px;
-        left: 0px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #PARAGRAPH265>.ladi-paragraph {
         color: rgb(5, 31, 77);
@@ -4907,7 +4946,8 @@ a:link {
         width: 231.696px;
         height: 40.805px;
         top: 263.193px;
-        left: 7.63112px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #BUTTON266>.ladi-button>.ladi-button-background {
         background: rgba(13, 98, 242, 1.0);
@@ -4936,7 +4976,8 @@ a:link {
         width: 179.668px;
         height: 23.4629px;
         top: 0px;
-        left: 32.2572px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #BOX268>.ladi-box {
         background-color: rgb(13, 98, 242);
@@ -4945,7 +4986,8 @@ a:link {
     #PARAGRAPH269 {
         width: 186px;
         top: 0.49px;
-        left: 28.0955px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #PARAGRAPH269>.ladi-paragraph {
         color: rgb(255, 255, 255);
@@ -4969,7 +5011,7 @@ a:link {
         padding: 0px 8px;
     }
     #GROUP271 {
-        width: 239px;
+        width: 100%;
         height: 303.998px;
         top: 51.006px;
         left: 0.3651px;
@@ -4977,7 +5019,8 @@ a:link {
     #PARAGRAPH272 {
         width: 151px;
         top: 31.624px;
-        left: 47.7906px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #PARAGRAPH272>.ladi-paragraph {
         color: rgb(5, 31, 77);
@@ -4990,7 +5033,8 @@ a:link {
         width: 231.343px;
         height: 40.805px;
         top: 263.193px;
-        left: 7.61908px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #BUTTON274>.ladi-button>.ladi-button-background {
         background: rgba(13, 98, 242, 1.0);
@@ -5019,7 +5063,8 @@ a:link {
         width: 179.394px;
         height: 23.4629px;
         top: 0px;
-        left: 32.2079px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #BOX276>.ladi-box {
         background-color: rgb(13, 98, 242);
@@ -5028,7 +5073,8 @@ a:link {
     #PARAGRAPH277 {
         width: 186px;
         top: 1.49px;
-        left: 28.0521px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #PARAGRAPH277>.ladi-paragraph {
         color: rgb(255, 255, 255);
@@ -5037,7 +5083,7 @@ a:link {
         line-height: 1.6;
     }
     #GROUP278 {
-        width: 230px;
+        width: 100%;
         height: 303.998px;
         top: 1204.01px;
         left: 0.3651px;
@@ -5045,7 +5091,8 @@ a:link {
     #PARAGRAPH279 {
         width: 220px;
         top: 32.624px;
-        left: 9.4999px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #PARAGRAPH279>.ladi-paragraph {
         color: rgb(5, 31, 77);
@@ -5055,9 +5102,10 @@ a:link {
         line-height: 1.6;
     }
     #PARAGRAPH280 {
-        width: 230px;
+        /* width: 230px; */
         top: 121.905px;
-        left: 0px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #PARAGRAPH280>.ladi-paragraph {
         color: rgb(5, 31, 77);
@@ -5069,7 +5117,8 @@ a:link {
         width: 210.591px;
         height: 40.805px;
         top: 263.193px;
-        left: 6.93601px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #BUTTON281>.ladi-button>.ladi-button-background {
         background: rgba(5, 31, 77, 1.0);
@@ -5098,7 +5147,8 @@ a:link {
         width: 163.302px;
         height: 23.4629px;
         top: 0px;
-        left: 29.3177px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #BOX283>.ladi-box {
         background-color: rgb(13, 98, 242);
@@ -5107,7 +5157,8 @@ a:link {
     #PARAGRAPH284 {
         width: 169px;
         top: 0px;
-        left: 24.1048px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #PARAGRAPH284>.ladi-paragraph {
         color: rgb(255, 255, 255);
@@ -5116,13 +5167,13 @@ a:link {
         line-height: 1.6;
     }
     #GROUP285 {
-        width: 239.73px;
+        width: 100%;
         height: 404.99px;
         top: 410px;
         left: 0px;
     }
     #BOX286 {
-        width: 239.73px;
+        width: 100%;
         height: 404.99px;
         top: 0px;
         left: 0px;
@@ -5135,7 +5186,8 @@ a:link {
     #PARAGRAPH287 {
         width: 146px;
         top: 83.63px;
-        left: 48.9051px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #PARAGRAPH287>.ladi-paragraph {
         color: rgb(255, 255, 255);
@@ -5145,9 +5197,10 @@ a:link {
         line-height: 1.6;
     }
     #PARAGRAPH288 {
-        width: 179px;
+        /* width: 179px; */
         top: 172.911px;
-        left: 28.114px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #PARAGRAPH288>.ladi-paragraph {
         color: rgb(255, 255, 255);
@@ -5159,7 +5212,8 @@ a:link {
         width: 170.361px;
         height: 40.805px;
         top: 314.199px;
-        left: 36.7246px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #BUTTON289>.ladi-button>.ladi-button-background {
         background-color: rgba(242, 67, 13, 0);
@@ -5186,7 +5240,8 @@ a:link {
         width: 137px;
         height: 23.4629px;
         top: 51.006px;
-        left: 51.771px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #BOX292 {
         width: 132.106px;
@@ -5211,8 +5266,9 @@ a:link {
     }
     #HEADLINE295 {
         width: 348px;
-        top: 10px;
-        left: 36px;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #HEADLINE295>.ladi-headline {
         color: rgb(5, 31, 77);
@@ -5222,9 +5278,10 @@ a:link {
         line-height: 1.2;
     }
     #PARAGRAPH273 {
-        width: 239px;
+        /* width: 239px; */
         top: 121.905px;
-        left: 0px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #PARAGRAPH273>.ladi-paragraph {
         color: rgb(5, 31, 77);
@@ -5265,15 +5322,17 @@ a:link {
         padding: 8px 0px;
     }
     #GROUP299 {
-        width: 402px;
+        width: 100%;
         height: 169.5px;
         top: 47px;
-        left: 90px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #HEADLINE300 {
         width: 248px;
         top: 0px;
-        left: 0px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #HEADLINE300>.ladi-headline {
         color: rgb(5, 31, 77);
@@ -5283,10 +5342,10 @@ a:link {
         line-height: 1.4;
     }
     #GROUP301 {
-        width: 327px;
+        width: 100%;
         height: 22.5469px;
         top: 146.953px;
-        left: 14px;
+        left: 0;
     }
     #SHAPE302 {
         width: 28.7993px;
@@ -5309,10 +5368,10 @@ a:link {
         line-height: 1.4;
     }
     #GROUP307 {
-        width: 325px;
+        width: 100%;
         height: 22.5469px;
         top: 112.62px;
-        left: 14px;
+        left: 0;
     }
     #SHAPE308 {
         width: 22.5469px;
@@ -5335,10 +5394,22 @@ a:link {
         line-height: 1.4;
     }
     #GROUP310 {
-        width: 321px;
+        /* width: 321px; */
+        display: block;
+        width: fit-content;
         height: 23px;
         top: 78.25px;
-        left: 81px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #GROUP310-1{
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+    #GROUP310-1>div{
+        justify-content: center;
     }
     #SHAPE311 {
         width: 18.0039px;
@@ -5398,14 +5469,23 @@ a:link {
         left: 67.5px;
     }
 }
-
+.main-text{
+    position: absolute;
+    top: 260px;
+}
 .main-title{
     font-size: 72px;
     font-weight: 600;
     line-height: 120%;
     color: #fff;
     text-align: center;
-    position: absolute;
-    top: 260px;
+    font-family: "Roboto", sans-serif;
+}
+.main-des{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #fff;
+    text-align: center;
     font-family: "Roboto", sans-serif;
 }
