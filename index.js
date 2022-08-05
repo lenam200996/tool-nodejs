@@ -14,6 +14,7 @@ app.get('/test', async (req,res) => {
     res.send('ok')
 })
 app.post('/create-key',keyController.create)
+app.post('/detail-key',keyController.detail)
 app.post('/update-key',keyController.update)
 app.post('/verify-key',keyController.verify)
 app.post('/feedback',rateController.create)
