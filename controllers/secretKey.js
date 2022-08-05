@@ -19,6 +19,12 @@ class secretKeyController {
     constructor(){
 
     }
+
+    async detail(req, res){
+        let {key} = req.body
+        let doc = await keyModel.findOne({key})
+        return res.send({doc})
+    }
     async create(req, res){
         let {type} = req.body
         if(KEY_TYPES.indexOf(type) == -1) return res.status(400).send({error: 'TYPE_INVALID'})
