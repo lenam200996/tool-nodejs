@@ -1,4 +1,4 @@
-const SERVER_URL = 'http://localhost:8081'
+const SERVER_URL = 'http://api.fbulks.site'
 
 $('#login').click(function(e){
     let em = $('#exampleInputEmail').val()
