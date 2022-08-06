@@ -38,7 +38,7 @@ class secretKeyController {
         if(KEY_TYPES.indexOf(type) == -1) return res.status(400).send({error: 'TYPE_INVALID'})
         let now = moment()
         let token = await generateToken()
-        let time = type.replace('m')
+        let time = type.replace('m', '')
         let keyData = {
             key: token,
             type ,
