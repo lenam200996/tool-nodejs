@@ -46,8 +46,8 @@ class secretKeyController {
         let keyData = {
             key: token,
             type ,
-            createdAt: now,
-            updatedAt: now,
+            createdAt: moment(),
+            updatedAt:  moment(),
             status: 0, 
             expiredTime:expiredTime
         }
