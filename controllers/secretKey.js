@@ -20,6 +20,14 @@ class secretKeyController {
 
     }
 
+    async list(req, res){
+        keyModel.find().then(docs => {
+            return res.send({success : true , docs})
+        }).catch(e => {
+            res.send({error : e})
+        })
+    }
+
     async detail(req, res){
         let {key} = req.body
         let doc = await keyModel.findOne({key})
@@ -30,13 +38,14 @@ class secretKeyController {
         if(KEY_TYPES.indexOf(type) == -1) return res.status(400).send({error: 'TYPE_INVALID'})
         let now = moment()
         let token = await generateToken()
+        let time = type.replace('m')
         let keyData = {
             key: token,
             type ,
             createdAt: now,
             updatedAt: now,
             status: 0, 
-            expiredTime: now.add(1, 'M')
+            expiredTime: now.add(Number(time), 'M')
         }
         let keyDoc = new keyModel(keyData)
         keyDoc.save().then(_doc => {
