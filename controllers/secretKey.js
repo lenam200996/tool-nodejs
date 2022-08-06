@@ -21,7 +21,7 @@ class secretKeyController {
     }
 
     async list(req, res){
-        keyModel.find().then(docs => {
+        keyModel.find().sort({createdAt: -1}).then(docs => {
             return res.send({success : true , docs})
         }).catch(e => {
             res.send({error : e})
