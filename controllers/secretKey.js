@@ -39,6 +39,8 @@ class secretKeyController {
         let now = moment()
         let token = await generateToken()
         let time = type.replace('m', '')
+        console.log('time',time)
+        console.log('expiredTime', now.add(Number(time), 'M'))
         let keyData = {
             key: token,
             type ,
